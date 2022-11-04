@@ -13,4 +13,8 @@ class BookingService (private  val dataSource: BookingDataSource) {
     fun getBooking(bookingId: String): Booking {
         return dataSource.retrievedBooking(bookingId)
     }
+
+    fun addBooking(booking: Booking) {
+        return dataSource.createBooking(booking)
+    }
 }
