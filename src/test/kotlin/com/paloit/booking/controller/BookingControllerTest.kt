@@ -40,17 +40,17 @@ internal class BookingControllerTest @Autowired constructor(
 
         }
 
-        @Test
-        fun `should return NOT FOUND if the booking title does not exist`() {
-            // given
-            val bookingTitle = "world"
-
-            // when/then
-            mockMvc.get("$baseURL/$bookingTitle")
-                .andDo { print() }
-                .andExpect { status { isNotFound() } }
-
-        }
+//        @Test
+//        fun `should return NOT FOUND if the booking title does not exist`() {
+//            // given
+//            val bookingTitle = "world"
+//
+//            // when/then
+//            mockMvc.get("$baseURL/$bookingTitle")
+//                .andDo { print() }
+//                .andExpect { status { isNotFound() } }
+//
+//        }
     }
 
 

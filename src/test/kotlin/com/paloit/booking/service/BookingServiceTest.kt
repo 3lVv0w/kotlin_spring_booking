@@ -19,6 +19,6 @@ internal class BookingServiceTest {
         bookingService.getBookings()
 
         // then
-        verify (exactly = 1) { bookingDataSource.retrievedBookings() }
+        verify (exactly = 1) { bookingDataSource.retrieveBookings() }
     }
 }

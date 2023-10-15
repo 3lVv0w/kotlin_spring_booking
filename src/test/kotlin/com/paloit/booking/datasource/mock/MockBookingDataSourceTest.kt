@@ -12,7 +12,7 @@ internal class MockBookingDataSourceTest {
         // given
         
         // when
-        val bookings = mockBookingDataSource.retrievedBookings()
+        val bookings = mockBookingDataSource.retrieveBookings()
         // then
         assertThat(bookings).isNotEmpty
     }
@@ -22,7 +22,7 @@ internal class MockBookingDataSourceTest {
         // given
 
         // when
-        val bookings = mockBookingDataSource.retrievedBookings()
+        val bookings = mockBookingDataSource.retrieveBookings()
         // then
         assertThat(bookings).allMatch { booking -> booking.title.isNotBlank()}
         // or
